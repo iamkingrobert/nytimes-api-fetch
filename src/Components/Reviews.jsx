@@ -30,7 +30,7 @@ class Reviews extends Component {
 
       this.setState({ movies: data });
     } catch (error) {
-      console.error("Error fetching movies:", error);
+      console.error(error);
     }
   };
 
