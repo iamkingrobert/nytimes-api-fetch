@@ -13,7 +13,8 @@ class Reviews extends Component {
   componentDidMount() {
     this.fetchMovies();
 
-    this.pollingInterval = setInterval(this.fetchMovies, 1000);
+    //Check for new data and Poll data here every 2 Seconds
+    this.pollingInterval = setInterval(this.fetchMovies, 2000);
   }
 
   componentWillUnmount() {
